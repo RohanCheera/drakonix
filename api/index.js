@@ -13,7 +13,7 @@ const PORT = 8800;
 
 // Enable CORS for all routes
 app.use(cors({
-  origin:["https://drakonix-fnd.vercel.app/"],
+    origin: 'https://drakonix-fnd.vercel.app',
   methods:["GET","POST"],
   credentials:true
 }));
@@ -23,6 +23,8 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();
 });
+
+
 
 
 // Connect to MongoDB
