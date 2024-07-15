@@ -13,16 +13,16 @@ const PORT = 8800;
 
 // Enable CORS for all routes
 app.use(cors({
-  origin:["http://localhost:3000"],
+  origin:["https://rohan099.vercel.app"],
   methods:["GET","POST"],
   credentials:true
 }));
-// app.use((req, res, next) => {
-//   res.setHeader('Access-Control-Allow-Origin', 'https://rohan099.vercel.app');
-//   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-//   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-//   next();
-// });
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://rohan099.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
 
 
 // Connect to MongoDB
