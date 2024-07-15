@@ -1,0 +1,9 @@
+.navbarmenu {
+    position: sticky;
+    top: 0px;
+    z-index: 200;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}

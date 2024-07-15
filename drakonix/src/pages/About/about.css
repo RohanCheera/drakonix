@@ -1,0 +1,71 @@
+.about-main{
+  margin: 0;
+  padding: 0;
+}
+/* .about{
+  margin: 0;
+  padding: 0;
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} */
+/* .about-logo{
+  position: relative;
+  height: 350px;
+  width: 350px;
+  align-self: center;
+}
+.about-logo::before{
+  content: '';
+  background: url('../../assets/logow.jpg');
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 350px;
+  align-self: center;
+  mix-blend-mode: screen;
+} */
+.about{
+  margin: 0;
+  padding: 5rem;
+  background-color: rgb(10, 33, 76);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 5rem;
+  align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.about-title-text{
+  margin: 0;
+  padding-bottom: 4rem;
+}
+.aboutme-content{
+  padding-right: 1.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.aboutme-content-bt{
+  width: 5rem;
+}
+/* Mobile devices with a maximum width of 767px */
+@media (max-width: 767px) {
+  .about{
+    padding: 1rem;
+  }
+  .about-title-text{
+    padding-bottom: 2rem;
+  }
+  .aboutme-content{
+    padding-right: 1rem;
+  }
+}
+/* Tablets or medium-sized devices with a width between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Your CSS styles for medium-sized devices here */
+}
+/* Desktops or larger devices with a width of 1024px or more */
+@media (min-width: 1024px) {
+  /* Your CSS styles for large devices here */
+}
