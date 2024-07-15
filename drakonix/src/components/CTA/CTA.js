@@ -33,7 +33,7 @@ const CTA = () => {
     setIsSubmitting(true); // Disable the submit button
 
     try {
-      const response = await fetch('https://drakonix.vercel.app/api/form/submit', {
+      const response = await fetch('https://drakonix.vercel.app/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
