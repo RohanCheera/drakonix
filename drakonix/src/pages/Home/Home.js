@@ -51,7 +51,7 @@ axios.defaults.withCredentials = true;
 
   const handleDownload = () => {
     // Replace 'path/to/cv.pdf' with the actual path to your CV file
-    const fileUrl = 'https://drive.google.com/file/d/1Idp6g0_VmSYACgL0Sc_70_L0ukvqawp3/view?usp=sharing';
+    const fileUrl = 'https://drive.google.com/file/d/1-P9nd7q8NT810BmI7ipLWO4pFmrWq6fK/view?usp=sharing';
     
     const link = document.createElement('a');
     link.href = fileUrl;
