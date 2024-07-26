@@ -4,19 +4,19 @@ import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import './work.css';
 import { IoPricetagsOutline } from "react-icons/io5";
-import { MdLocalGroceryStore } from "react-icons/md";
-import { BsFillThreadsFill } from "react-icons/bs";
 import { FaCar } from "react-icons/fa";
-import { TiSocialInstagramCircular } from "react-icons/ti";
-import { MdRealEstateAgent } from "react-icons/md";
+import { FaPython } from "react-icons/fa6";
+import { BiSolidPhoneCall } from "react-icons/bi";
+import { MdHomeRepairService } from "react-icons/md";
+import { MdOutlineSentimentSatisfied } from "react-icons/md";
 
 function Work() {
   const pricewise = <IoPricetagsOutline style={getStyle("btn-back-red")} />;
-  const summiz = <MdLocalGroceryStore style={getStyle("btn-back-yellow")} />;
-  const threads = <BsFillThreadsFill style={getStyle("btn-back-green")} />;
+  const caller = <BiSolidPhoneCall style={getStyle("btn-back-blue")} />;
   const car = <FaCar style={getStyle("btn-back-blue")} />;
-  const snapgram = <TiSocialInstagramCircular style={getStyle("btn-back-pink")} />;
-  const estate = <MdRealEstateAgent style={getStyle("btn-back-black")} />;
+  const snapgram = <MdHomeRepairService style={getStyle("btn-back-green")} />;
+  const estate = <MdOutlineSentimentSatisfied style={getStyleRev("btn-back-pink")} />;
+  const python =<FaPython style={getStyleRev("btn-back-yellow")}/>
 
   function getStyle(theme) {
     return {
@@ -30,56 +30,67 @@ function Work() {
       boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'
     };
   }
+  function getStyleRev(theme) {
+    return {
+      width: '50px',
+      height: '50px',
+      color: theme.split('-')[2], // Example dynamic color based on theme
+      marginRight: '10px',
+      backgroundColor: theme.includes('btn-back') ? 'black' : 'white', // Example dynamic background color based on theme
+      borderRadius: '30%',
+      padding: '5px',
+      boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'
+    };
+  }
 
   const projects = [
     {
-      iconUrl: pricewise,
+      iconUrl: caller,
       theme: "btn-back-red",
-      name: "Nike Store",
+      name: "Qcaller",
       description:
-        "Developed a web application that shows stylish nike brand shoes, helping users find the best deals.",
-        link: "https://github.com/RohanCheera/Car-Rental-System",
+        "Engineered a MERN stack web portal with Twilio API integration, automating rent payment reminders through calls; ensured timely notifications and streamlined payment management, reducing late payments by 40% and saving 100+ hours monthly.",
+        link: "https://github.com/RohanCheera/Qcaller",
     },
     {
-      iconUrl: threads,
+      iconUrl: pricewise,
       theme: "btn-back-green",
-      name: "Full Stack Admin Dashboard",
+      name: "CouponTrader",
       description:
-        "Created a full-stack admin dashboard where admin can view the weekly, monthly and yearly sales and product distribution. Also can view all kind of transaction history.",
-        link: "https://github.com/RohanCheera/Car-Rental-System",
+        "Developed a MERN stack application incorporating Redux, allowing users to exchange unused coupons for virtual currency; supported transactions from GPay and Amazon, boosting platform activity by 50% and user retention by35%.",
+      link: "https://github.com/RohanCheera/CouponTrader", 
     },
     {
       iconUrl: car,
       theme: "btn-back-blue",
-      name: "Travel And Tour Website",
+      name: "Car Rental System",
       description:
-        "A console-based Car Rental System in C++ using OOP principles, managing car inventory, customer reservations, and rental transactions efficiently.",
-      link: "https://github.com/RohanCheera/Car-Rental-System",
+        "Developed a comprehensive Car Rental System using Object-Oriented Programming (OOP) concepts in C++. The system includes features such as vehicle booking, customer management, and payment processing. Implemented encapsulation, inheritance, and polymorphism to ensure a modular and maintainable codebase. ",
+      link: "https://github.com/RohanCheera/Car-Rental-System", 
     },
     {
       iconUrl: snapgram,
       theme: "btn-back-pink",
-      name: "Full Stack Flowmazon App",
+      name: "Employee Attrition Prediction",
       description:
-        "Built a complete Flowmazon ecommerce web app where user can sign up and order their favourite products. User can add items in cart and see the total price",
-        link: "https://github.com/RohanCheera/Car-Rental-System",
+        "Implemented a machine learning algorithm in Python to predict employee attrition with 85% accuracy, leading to a 20% improvement in retention strategies and saving $300,000 in rehiring expenses.",
+        link: "https://github.com/RohanCheera/EmployeeAttrition",
     },
     {
       iconUrl: estate,
-      theme: "btn-back-black",
-      name: "Social App",
-      description:
-        "Developed a web application for social media user. User can read write or post their beautiful moment.",
-        link: "https://github.com/RohanCheera/Car-Rental-System",
-    },
-    {
-      iconUrl: summiz,
       theme: "btn-back-yellow",
-      name: "Grocery Store",
-      description:
-        "A beautiful website where user can find out best deals for their daily basis grocery products and can read articles or blogs.",
-        link: "https://github.com/RohanCheera/Car-Rental-System",
-    },
+      name: "Sentiment Analysis Projects",
+      description: "A comprehensive repository of sentiment analysis projects demonstrating various techniques and applications in natural language processing.",
+      link: "https://github.com/RohanCheera/Sentiment-Analysis"
+  },  
+    
+    {
+      iconUrl: python,
+      theme: "btn-back-yellow",
+      name: "Innovative Python Projects",
+      description: "A collection of 10 innovative Python projects showcasing diverse applications from web development to data science.",
+      link: "https://github.com/RohanCheera/Python-Projects"
+  }
   ];
 
   return (
