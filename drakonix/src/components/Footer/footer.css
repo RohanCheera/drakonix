@@ -1,0 +1,15 @@
+.footer{
+  background-color: #000000;
+  height: 15vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.footer-copy{
+  color: white;
+}
+.name{
+  color: rgb(0, 225, 255);
+}

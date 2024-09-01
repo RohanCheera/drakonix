@@ -1,0 +1,75 @@
+.effort{
+  /* background-color: black; */
+  overflow-x: hidden;
+  padding-top: 1rem ;
+  padding-bottom: 1rem ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(10, 33, 76);
+}
+.effort-box{
+  width: 18rem;
+  height:12rem;
+  margin: .5rem;
+}
+.effort-card{
+  width: 18rem;
+  height: 12rem;
+  overflow: hidden;
+}
+.ec1{
+  background: url('../../assets/mgithub.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ec2{
+  background: url('../../assets/mleetcode.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ec3{
+  background: url('../../assets/mhugg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ec4{
+  background: url('../../assets/mkaggle.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/* Mobile devices with a maximum width of 767px */
+@media (max-width: 767px) {
+
+  .effort-box{
+    display: none;
+  }
+  .effort-card{
+    /* margin-left: 1.5rem; */
+    width: 100%;
+    height: 12rem;
+  }
+  .effort-box:last-child{
+    margin-right: 1.9rem;
+    width: 90%;
+    height: 12rem;
+  }
+  .carousel{
+    width: 90%;
+    height:12rem;
+    margin: .5rem;
+  }
+}
+@media (min-width: 768px) {
+  .carousel{
+    display: none;
+  }
+}

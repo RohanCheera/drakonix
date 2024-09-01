@@ -1,0 +1,54 @@
+/* Default Global Variables */
+:root {
+ 
+  /* Colors */
+  --bg-color:rgb(41, 12, 67);
+  --color:#fff;
+  --pad-10:0.5rem;
+  
+  /* Fonts */
+  --font-myname: 10rem;
+  --font-h1: 2.5rem;
+  --font-btn-1:1rem;
+  --font-bold: 700;
+  --font-sm-myname: 5rem;
+  --font-sm-h1: 2rem;
+  --font-sm-btn-1: 1rem;
+ 
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Border */
+  --border-radius: 4px;
+  --border-width: 1px;
+  --border-color: #ccc;
+  
+  /* Shadows */
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+  /* Transitions */
+  --transition-duration: 0.3s;
+  --transition-ease: ease-in-out;
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  :root {
+    --font-size: 14px;
+    /* Add more mobile-specific variables here */
+  }
+}
+
+/* Laptop devices */
+@media (min-width: 768px) {
+  :root {
+    --font-size: 20px;
+    /* Add more laptop-specific variables here */
+  }
+}
+
+

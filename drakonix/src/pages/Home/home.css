@@ -1,0 +1,200 @@
+.home-body{
+  position: relative;
+  overflow-x: hidden;
+  
+}
+
+.home-main{
+  margin: 0;
+}
+.home-content{
+  position: fixed;
+  overflow: hidden;
+  height: 100vh;
+}
+.text-con{
+  margin-left: 1rem;
+}
+.text-con p{
+  align-items: flex-start;
+  font-size: var(--font-h1);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.text-con h1{
+  font-size: var(--font-myname);
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 1000;
+}
+.sp-title{
+  color: blue;
+}
+.hm-btns{
+  margin-left: 0rem;
+  display: flex;
+  padding-bottom: 1rem;
+  margin-right: 1rem;
+}
+.hm-btn{
+  padding-right: 1rem;
+  border: 2px solid;
+  font-size: var(--font-btn-1);
+  width: 10rem;
+  height: 2.5rem;
+  margin-left: .5rem;
+  margin-top: .5rem;
+  border-radius: 2rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  .text-con p{
+    align-items: flex-start;
+    font-size: var(--font-sm-h1);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  .iam{
+    margin-bottom: -1rem;
+  }
+  .text-con h1{
+    margin-bottom: 0;
+    font-size: var(--font-sm-myname);
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
+  }
+  .hm-btn{
+    padding-right: 1rem;
+    font-size: var(--font-btn-1);
+    width: 10rem;
+    height: 2.5rem;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    border-radius: 2rem;
+    border-color: inherit;
+    
+  }
+/*   .home__img{
+    background-color: aqua;
+    margin-right: 2rem;
+    margin: 0;
+    padding: 0;
+    background: url(../../assets/rohanw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-left: 8px solid red;
+  border-bottom: 8px solid red;
+  border-right: 8px solid blue;
+    order: 1;
+    justify-self: center;
+    min-width: 25rem;
+    max-width:30rem ;
+    height: 35rem;
+  } */
+  
+}
+
+/* Laptop devices */
+@media (min-width: 768px) {
+  .home-content{
+    display: flex;
+    padding-right: 4rem;
+  }
+
+  
+}
+/* .home__img{
+  margin-right: 2rem;
+  position: relative;
+  grid-column-start: 3;
+  margin: 0;
+  padding: 0;
+  background: url(../../assets/rohanw.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-left: 4px solid rgb(0, 208, 255);
+  border-bottom: 4px solid red;
+  border-right: 4px solid rgb(255, 0, 230);
+  box-shadow: inset 0 0 0 4px rgb(14, 1, 1);
+  order: 1;
+  justify-self: center;
+  min-width: 25rem;
+  max-width:30rem ;
+  height: 35rem;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+} */
+@keyframes profile__animate{
+  
+  0%{
+    border-radius: 90% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+
+.social-media-icons{
+  z-index: 15;
+  padding: 0px;
+  height:200px;
+  width: 40px;  
+  position: fixed;
+  top: 250px;
+  right: 2px;
+
+}
+.sm-icon{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 0px;
+  height: 40px;
+  width: 40px;
+  /* border: 2px solid #fff; */
+  /* color: #fff!important; */
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.email{
+  background-color: rgb(193, 56, 51);
+}
+.email-link{
+  color: #fff;
+  background-color:rgb(193, 56, 51);
+}
+.linkedin{
+  background-color: rgb(35, 178, 235);
+}
+.linkedin-link{
+  background-color: rgb(35, 178, 235);
+  color: white;
+
+}
+.twitter{
+  background-color: rgb(12, 12, 12);
+
+}
+.twitter-link{
+  color: #fff;
+}
+.insta{
+  color: #fff;
+  background-color: rgb(242, 6, 6);
+
+}
+.insta-link{
+  color: #fff;
+}
+
