@@ -46,7 +46,7 @@ function Home() {
   const handleShow = () => setShow(true);
 
   const handleDownload = () => {
-    const fileUrl = 'https://drive.google.com/file/d/1Idp6g0_VmSYACgL0Sc_70_L0ukvqawp3/view?usp=sharing';
+    const fileUrl = 'https://drive.google.com/file/d/10a06tnAafR1B1mpOyxDQw8oDl0GOg4ax/view?usp=sharing';
     
     const link = document.createElement('a');
     link.href = fileUrl;
